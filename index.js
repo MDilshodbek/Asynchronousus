@@ -1,18 +1,15 @@
-let email = "Hello@gmail.com ";
+let email = "Hello@gmail.com";
 let ps = "intensive";
 
-function intoFacebook(pawsord, email, callback) {
-  callback("Sending request to beckend");
+function intoFacebook(password, email, callback) {
   setTimeout(() => {
-    if ((password = "Hello from me" && email === "Hello@gmail.com")) {
+    if (password === "intensive" && email === "Hello@gmail.com") {
       return callback("You logged into your account");
     } else {
-      ("Ooops! Something went wrong!");
+      callback("Ooops! Something went wrong!");
     }
-  }, 1000);
+  }, 3000);
 }
-console.log(
-  intoFacebook(ps, email, (data) => {
-    console.log(data);
-  })
-);
+intoFacebook(ps, email, (data) => {
+  console.log(data);
+});
